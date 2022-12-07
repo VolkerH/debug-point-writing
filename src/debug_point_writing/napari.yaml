@@ -1,0 +1,17 @@
+name: debug-point-writing
+display_name: Debug point writing
+contributions:
+  commands:
+    - id: debug-point-writing.write_multiple
+      python_name: debug_point_writing._writer:write_multiple
+      title: Save multi-layer data with Debug point writing
+    - id: debug-point-writing.write_single_image
+      python_name: debug_point_writing._writer:write_single_image
+      title: Save image data with Debug point writing
+  writers:
+    - command: debug-point-writing.write_multiple
+      layer_types: ['image*','labels*']
+      filename_extensions: []
+    - command: debug-point-writing.write_single_image
+      layer_types: ['image']
+      filename_extensions: ['.npy']
