@@ -8,4 +8,4 @@ contributions:
   writers:
     - command: debug-point-writing.write_single_points_layer
       layer_types: ['points']
-      filename_extensions: ['.hdf5']
+      filename_extensions: ['.points.hdf5']
