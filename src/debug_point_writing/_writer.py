@@ -18,7 +18,8 @@ if TYPE_CHECKING:
 def write_single_points_layer(path: str, data: Any, meta: dict) -> List[str]:
     """Writes a single image layer"""
 
-    # implement your writer logic here ...
-    print("In point writer, trying to write ",path )
+    # Pretend we're writing something but just print to console
+    print("In point writer, trying to write ", path)
+
     # return path to any file(s) that were successfully written
     return [path]
